@@ -43,5 +43,7 @@ public class MainActivity extends AppCompatActivity {
                 + " connected";
 
         Toast.makeText(this, networkStatusString, Toast.LENGTH_SHORT).show();
+        Log.i(TAG, MainActivity.class.getSimpleName() + " instance hash code : " + this.hashCode());
+        Log.i(TAG, NetworkStatusService.class.getSimpleName() + " instance hash code : " + networkStatusService.hashCode());
     }
 }
