@@ -15,7 +15,7 @@ import javax.inject.Inject;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static final String TAG = DaggerApplication.class.getSimpleName();
+    private static final String TAG = MainActivity.class.getSimpleName();
     @Inject NetworkStatusService networkStatusService;
     private ActivityComponent activityComponent;
 

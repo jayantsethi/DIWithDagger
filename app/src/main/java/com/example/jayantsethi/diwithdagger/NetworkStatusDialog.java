@@ -28,10 +28,9 @@ public class NetworkStatusDialog extends AlertDialog{
                 (networkStatusService.isConnectedToInternet() ? "" : " not")
                 + " connected";
 
-
-        Log.i(TAG, NetworkStatusService.class.getSimpleName() + " instance hash code : " + networkStatusService.hashCode());
-        Log.i(TAG, MainActivity.class.getSimpleName() + " instance hash code : " + context.hashCode());
-        Log.i(TAG, NetworkStatusDialog.class.getSimpleName() + " instance hash code : " + this.hashCode());
+        Log.i(TAG, NetworkStatusService.class.getSimpleName() + " instance hash code : " + networkStatusService.hashCode() + " Object : " + networkStatusService.toString());
+        Log.i(TAG, MainActivity.class.getSimpleName() + " instance hash code : " + context.hashCode() + " Object : " + context.toString());
+        Log.i(TAG, NetworkStatusDialog.class.getSimpleName() + " instance hash code : " + this.hashCode() + " Object : " + this.toString());
 
         new AlertDialog.Builder(context)
                 .setTitle("Info")
